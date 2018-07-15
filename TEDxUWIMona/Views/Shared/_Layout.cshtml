@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - TEDxUWIMona</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -17,23 +17,109 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+               @* @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+                <a href="@Url.Action("Index", "Home")" >
+                    <img style="height: 48px; width: 252px" src="~/Content/tedx-3.png" />
+                </a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Sponsors", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+              
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div>
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        @*footer>
+            <p style="text-align:center">This independent TEDx event is operated under license from TED.</p>
+        </footer>*@
+        <footer id="t3-footer" class="wrap t3-footer cus-footer">
+
+            <!-- FOOT NAVIGATION -->
+            <div class="container">
+                <!-- SPOTLIGHT -->
+                <div class="t3-spotlight t3-footnav  row">
+                    <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                        <div class="t3-module module " id="Mod160">
+                            <div class="module-inner">
+                                <div class="module-ct">
+
+                                    <div class="">
+                                        <h3><span style="font-family: arial, helvetica, sans-serif;">What is <strong>TEDx</strong>?</span></h3>
+                                        <p>In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDxUWIMona, where x = independently organized TED event. At our TEDxUWIMona event, TED Talks video and live speakers will combine to spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.</p>
+                                        <p><a href="https://www.ted.com/about/programs-initiatives/tedx-program">Read more about the TEDx program.</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                        @*<div class="t3-module module " id="Mod158">
+                            <div class="module-inner">
+                                <div class="module-ct">
+
+                                    <div class="custom">
+                                        <div align="right">
+                                            <h3><span style="font-family: arial, helvetica, sans-serif;">Get the Latest</span></h3>
+                                            <form id="subForm" action="http://thirdsunproductions.createsend.com/t/y/s/fdjdlu/" method="post">
+                                                <div><span style="font-family: arial, helvetica, sans-serif;"> <input id="name" onblur="if (this.value == '') {this.value = 'Name';}" onfocus="if (this.value == 'Name') {this.value = '';}" name="cm-name" size="10" type="text" value="Name"> <input id="bvck-bvck" onblur="if (this.value == '') {this.value = 'Email';}" onfocus="if (this.value == 'Email') {this.value = '';}" name="cm-fdjdlu-fdjdlu" size="10" type="text" value="Email"> <button class="btn" type="submit">Subscribe to our Newsletter</button></span></div>
+                                            </form>
+                                        </div>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>*@
+                        <div class="t3-module module " id="Mod161">
+                            <div class="module-inner">
+                                <div class="module-ct">
+
+                                    <div class="custom">
+                                        <div align="right">
+                                            <p>
+                                                <a href="https://www.facebook.com/" target="_blank"><em class="fa fa-2x fa-facebook-square"></em></a> 
+                                                <a href="https://twitter.com/TEDxUWIMona" target="_blank"><em class="fa fa-2x fa-twitter-square"></em></a> 
+                                                <a href="http://instagram.com/tedxuwimona" target="_blank"><em class="fa fa-2x fa-instagram"></em></a> 
+                                                <a href="https://www.youtube.com/channel/UCNXcrvwEYX5B2FiTyROmmAA" target="_blank"><em class="fa fa-2x fa-youtube-square"></em></a> 
+                                                <a href="https://tedxuwimona.tumblr.com" target="_blank"><em class="fa fa-2x fa-tumblr-square"></em></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="t3-module module " id="Mod157">
+                            <div class="module-inner">
+                                <div class="module-ct">
+
+                                    <div class="custom">
+                                        @*<p style="text-align: right;"><span style="font-family: arial, helvetica, sans-serif;">©&nbsp;2018 TEDxUWIMona</span></p>*@
+                                        <p style="text-align: right;"><span style="font-family: arial, helvetica, sans-serif;">This independent TEDx event is operated under license from TED.</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SPOTLIGHT -->
+            </div>
+            <!-- //FOOT NAVIGATION -->
+
+            <section class="t3-copyright">
+                <div class="container">
+                    <div class="row">
+
+
+
+                    </div>
+                </div>
+            </section>
+
         </footer>
     </div>
 

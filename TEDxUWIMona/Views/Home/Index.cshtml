@@ -2,13 +2,13 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
+<div class="jumbotron body-content">
     <h1>ASP.NET</h1>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
-<div class="row">
+<div class="row body-content">
     <div class="col-md-4">
         <h2>Getting started</h2>
         <p>
@@ -28,4 +28,55 @@
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
+    <section class="bg-img pt70 pb70" style="background-image: url('assets/img/bg/bg-img.png');">
+        <div class="overlay_dark"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <h4 class="mb30 text-center color-light">Counter until the big event</h4>
+                    <div class="countdown">
+                        <div><p id="days">10</p> <span>Days</span></div>
+                        <div><p id="hours">04</p><span>Hours</span></div>
+                        <div><p id="minutes">20</p><span>Minutes</span></div>
+                        <div><p id="seconds">40</p><span>Seconds</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
+<script type="text/javascript">
+    function countdown() {
+        var now = new Date();
+        var eventDate = new Date(2019, 2, 21, 10, 00, 00);
+
+        var currentTime = now.getTime();
+        var eventTime = eventDate.getTime();
+
+        var remTime = eventTime - currentTime;
+
+        var s = Math.floor(remTime / 1000);
+        var m = Math.floor(s / 60);
+        var h = Math.floor(m / 60);
+        var d = Math.floor(h / 24);
+
+        h %= 24;
+        m %= 60;
+        s %= 60;
+
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+
+        document.getElementById("days").textContent = d;
+        document.getElementById("days").innerText = d;
+
+        document.getElementById("hours").textContent = h;
+        document.getElementById("minutes").textContent = m;
+        document.getElementById("seconds").textContent = s;
+
+        setTimeout(countdown, 1000);
+    }
+
+    countdown();
+</script>

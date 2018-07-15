@@ -1,6 +1,5 @@
 ﻿body {
     padding-top: 50px;
-    padding-bottom: 20px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +20,93 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+.cus-footer {
+    vertical-align: bottom;
+}
+.t3-footer {
+    border-top: 1px solid #eeeeee;
+    background: #000000;
+    color: #ffffff;
+}
+.t3-footer:before,
+.t3-footer:after {
+    content: " ";
+    display: table;
+}
+.t3-footer:after {
+    clear: both;
+}
+.t3-footer small {
+    display: block;
+    font-size: 100%;
+}
+.t3-footnav {
+    padding: 20px 0;
+}
+.t3-footnav:before,
+.t3-footnav:after {
+    content: " ";
+    display: table;
+}
+.t3-footnav:after {
+    clear: both;
+}
+@media screen and (min-width: 768px) {
+    .t3-footnav {
+        padding: 40px 0;
+    }
+}
+.t3-footnav .t3-module {
+    background: #000000;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.t3-footnav .t3-module .module-title {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.t3-footnav .t3-module ul {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.t3-footnav .t3-module ul > li {
+    line-height: 24px;
+}
+.t3-footnav .t3-module ul > li > a {
+    color: #ffffff;
+}
+.t3-footnav .t3-module ul > li > a:hover,
+.t3-footnav .t3-module ul > li > a:active,
+.t3-footnav .t3-module ul > li > a:focus {
+    color: #ffffff;
+}
+
+#t3-footer .btn {
+    background: #FF1C19;
+}
+
+.countdown {
+    text-align: center;
+}
+    .countdown div {
+        margin: 20px;
+        display: inline-block;
+        padding: 25px;
+        min-width: 120px;
+        background-color: #FF1C19;
+        color: #ffffff;
+        font-size: 48px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.2;
+    }
+.countdown div span {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
 }
