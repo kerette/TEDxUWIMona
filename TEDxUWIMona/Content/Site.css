@@ -110,3 +110,23 @@ textarea {
     font-size: 14px;
     font-weight: 400;
 }
+.justify-content-center {
+    float: none;
+    margin: 0 auto;
+}
+.bg-img {
+    border-radius: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+}
+.bg-img .overlay_dark {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
