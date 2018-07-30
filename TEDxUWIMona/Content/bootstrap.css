@@ -3351,9 +3351,9 @@ fieldset[disabled] .btn-warning.focus {
   background-color: #fff;
 }
 .btn-danger {
-  color: #fff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
+    color: #fff;
+    background-color: #ff1c19;
+    border-color: #d43f3a;
 }
 .btn-danger:focus,
 .btn-danger.focus {
@@ -4330,7 +4330,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 7.5px -15px;
+    margin: 7.5px -15px;
 }
 .navbar-nav > li > a {
   padding-top: 10px;

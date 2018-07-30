@@ -26,5 +26,10 @@ namespace TEDxUWIMona.Controllers
 
             return View();
         }
+
+        public ActionResult Sponsor()
+        {
+            return View();
+        }
     }
 }

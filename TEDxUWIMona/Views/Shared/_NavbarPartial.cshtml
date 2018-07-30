@@ -1,0 +1,38 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @* @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+            <a href="@Url.Action("Index", "Home")">
+                <img style="height: 80px; " src="~/Content/tedx-3.png" />
+            </a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right nav">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        About 
+                    </a>
+                    <div class="dropdown-menu bg-dark">
+                        <ul style="padding-left:0">
+                            <li class="dropdown-item">
+                                @Html.ActionLink("TEDxUWIMona", "Index", "About", routeValues: null, htmlAttributes: new { @class = "nav-link" })
+                            </li>
+                            <li class="dropdown-item ">
+                                @Html.ActionLink("Our Team", "Team", "About", routeValues: null, htmlAttributes: new { @class = "nav-link" })
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>@Html.ActionLink("Sponsors", "Sponsor", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            </ul>
+
+        </div>
+    </div>
+</div>
