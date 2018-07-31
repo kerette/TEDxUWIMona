@@ -214,23 +214,28 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\businessman-avatar-icon-01-.jpg" />
-    <Content Include="Content\download %281%29.png" />
-    <Content Include="Content\jamrock logo.png" />
-    <Content Include="Content\logo.png" />
-    <Content Include="Content\generic.png" />
+    <Content Include="Content\awesome.png" />
     <Content Include="Content\bg-img.png" />
     <Content Include="Content\bootstrap-simplex.css" />
     <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\awesome.png" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\businessman-avatar-icon-01-.jpg" />
+    <Content Include="Content\download %281%29.png" />
     <Content Include="Content\favicon497x497-175.png" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Generic-Logo-Horizontal-FA-01.png" />
+    <Content Include="Content\generic.png" />
+    <Content Include="Content\jamrock logo.png" />
+    <Content Include="Content\logo.png" />
     <Content Include="Content\scroll.png" />
+    <Content Include="Content\Site.css" />
     <Content Include="Content\TECHSOL BRAND.png" />
     <Content Include="Content\tedx-3.png" />
     <Content Include="Content\tedx.png" />
@@ -238,7 +243,6 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -309,10 +313,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
